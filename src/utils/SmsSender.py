@@ -11,11 +11,11 @@ def md5(str):
 
 smsBaseUrl = "http://sdk2.entinfo.cn:8061/webservice.asmx/mdsmssend?%s"
 sn = "SDK-SKY-010-01656"
-pwd = md5(sn + "194947").upper()
+pwd = md5(sn + "01656").upper()
 mobile = "15972957263"
 
 params = {
-          "sn" : "SDK-SKY-010-01656",
+          "sn" : "SDK-SKY-010-194947",
           "pwd" : pwd,
           "mobile" : "15972957263",
           "content" : "2222",
