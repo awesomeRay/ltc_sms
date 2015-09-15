@@ -5,14 +5,12 @@ import urllib
 import hashlib
 import json
 import common.site
-import common.Config
+from common.Config import smsConfig
 
 def md5(contentStr):
     m = hashlib.md5()   
     m.update(contentStr)
     return m.hexdigest()
-
-smsConfig = common.Config.smsConfig
 
 smsBaseUrl = smsConfig["url"] + "?%s"
 smsParams = smsConfig["params"]
@@ -26,8 +24,6 @@ def sendSms(content):
     print smsBaseUrl % urllib.urlencode(smsParams)
     response = urllib.urlopen(smsBaseUrl % urllib.urlencode(smsParams))
     print response.read()
-
-print 123
 
 if __name__ == "__main__":
     sendSms("请注意，")

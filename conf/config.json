@@ -12,5 +12,8 @@
 		},
 		"contentSuffix" : "。【风行网】"
     },
-    "interval" : 30
+    "interval" : 30,
+    "tickerLength" : 240,
+    "range" : 0.03,
+    "maxWaitSeconds" :  1
 }

@@ -14,4 +14,6 @@ def initConfig():
 
 config = initConfig()
 smsConfig = config["smsConfig"]
-interval = config["interval"];
+
+def getConfig():
+    return config
