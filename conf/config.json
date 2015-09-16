@@ -10,10 +10,11 @@
 			"stime" : "",
 			"msgfmt" : ""
 		},
-		"contentSuffix" : "。【风行网】"
+		"prefix" : "尊敬的用户，欢迎使用本软件，",
+		"suffix" : "。【风行网】"
     },
     "interval" : 30,
-    "tickerLength" : 240,
-    "range" : 0.03,
-    "maxWaitSeconds" :  1
+    "tickerMaxLength" : 240,
+    "range" : 0.003,
+    "maxWaitSeconds" :  3600
 }

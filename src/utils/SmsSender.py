@@ -19,6 +19,7 @@ smsParams["pwd"] = md5(smsParams["sn"] + smsParams["pwd"]).upper()
 
 # content必须以中文开头，且长度不小于10个字符
 def sendSms(content):
+    print "send..." + content
     smsParams["content"] = content
     # print urllib.urlencode(params)
     print smsBaseUrl % urllib.urlencode(smsParams)
@@ -26,6 +27,6 @@ def sendSms(content):
     print response.read()
 
 if __name__ == "__main__":
-    sendSms("请注意，")
+    sendSms("尊敬的用户，欢迎使用本软件,【下】了，幅度:0.00218698742482,[2015-09-16 15:26:49]。【风行网】")
 
 
