@@ -32,8 +32,11 @@ def savePoint(point):
 
 if __name__ == '__main__':
     while True:
-        print time.time()
+        print time.strftime('%Y-%m-%d %H:%M:%S')
         newestTicker = OKClient.getTicker()
+        if newestTicker is None:
+            time.sleep(config["interval"])
+            continue
         point = tickerManager.calcPoint(newestTicker)
         if point is not None:
             lastPoint = getLastPoint()
@@ -46,4 +49,3 @@ if __name__ == '__main__':
         tickerManager.addTicker(newestTicker)
         tickerManager.writeData()
         time.sleep(config["interval"])
-

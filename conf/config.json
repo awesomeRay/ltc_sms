@@ -14,7 +14,7 @@
 		"suffix" : "。【风行网】"
     },
     "interval" : 30,
-    "tickerMaxLength" : 240,
-    "range" : 0.003,
+    "tickerMaxLength" : 360,
+    "range" : 0.025,
     "maxWaitSeconds" :  3600
 }
